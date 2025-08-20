@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p127374-e1240195.adobeaemcloud.com/bin/franklin.delivery/AEMXSC/dci/main"
-    type: "markup"
-    suffix: ".html"
