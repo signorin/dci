@@ -15,7 +15,7 @@ export default async function decorate(block) {
   const siteName = await getSiteName();
   const footerPath = footerMeta
     ? new URL(footerMeta, window.location).pathname
-    : `/content/${siteName}${PATH_PREFIX}/footer`;
+    : `/content/${siteName}${PATH_PREFIX}/${lang}/footer`;
 
   /*
   // load footer as fragment
