@@ -120,23 +120,22 @@ export default async function decorate(block) {
         
         if (isImageLeft) {
           // Image-left layout: image on left, text on right
-          bannerContentStyle = 'background-image: url(${imgUrl});';
+          bannerContentStyle = `background-image: url(${imgUrl});`;
         } else if (isImageRight) {
           // Image-right layout: image on right, text on left
-          bannerContentStyle = 'background-image: url(${imgUrl});';
+          bannerContentStyle = `background-image: url(${imgUrl});`;
         } else if (isImageTop) {
           // Image-top layout: image on top, text on bottom
-          bannerContentStyle = 'background-image: url(${imgUrl});';
+          bannerContentStyle = `background-image: url(${imgUrl});`;
         } else if (isImageBottom) {
           // Image-bottom layout: text on top, image on bottom
-          bannerContentStyle = 'background-image: url(${imgUrl});';
+          bannerContentStyle = `background-image: url(${imgUrl});`;
         } else {
           // Default layout: image as background with gradient overlay (original behavior)
-          bannerDetailStyle = 'background-image: linear-gradient(90deg,rgba(0,0,0,0.6), rgba(0,0,0,0.1) 80%) ,url(${imgUrl});';
+          bannerDetailStyle = `background-image: linear-gradient(90deg,rgba(0,0,0,0.6), rgba(0,0,0,0.1) 80%) ,url(${imgUrl});`;
         }
 
-        block.innerHTML = '
-        <div class='banner-content block ${displayStyle}' data-aue-resource=${itemId} data-aue-label="Offer Content fragment" data-aue-type="reference" data-aue-filter="contentfragment" style="${bannerContentStyle}">
+        block.innerHTML = `<div class='banner-content block ${displayStyle}' data-aue-resource=${itemId} data-aue-label="Offer Content fragment" data-aue-type="reference" data-aue-filter="contentfragment" style="${bannerContentStyle}">
           <div class='banner-detail' style="${bannerDetailStyle}" data-aue-prop="bannerimage" data-aue-label="Main Image" data-aue-type="media" >
                 <p data-aue-prop="title" data-aue-label="Title" data-aue-type="text" class='cftitle'>${cfReq?.title}</p>
                 <p data-aue-prop="cfsubtitle" data-aue-label="SubTitle" data-aue-type="text" class='cfsubtitle'>${cfReq?.subtitle}</p>
@@ -150,8 +149,7 @@ export default async function decorate(block) {
             </div>
             <div class='banner-logo'>
             </div>
-        </div>
-        ';
+        </div>`;
         
     
       } catch (error) {
