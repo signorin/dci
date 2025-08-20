@@ -6,8 +6,26 @@ import {
 export const PATH_PREFIX = '/language-masters';
 export const TAG_ROOT = 'wknd-universal:';
 //export const SITE_NAME = 'wknd-universal';
-export const SUPPORTED_LANGUAGES = ['en'];
+export const SUPPORTED_LANGUAGES = [
+  'en',    // English
+  'fr',    // French
+  'de',    // German
+  'es',    // Spanish
+  'it',    // Italian
+  'pt',    // Portuguese
+  'nl',    // Dutch
+  'sv',    // Swedish
+  'da',    // Danish
+  'ru',    // Russian
+  'ja',    // Japanese
+  'zh',    // Chinese (Simplified)
+  'zh_TW', // Chinese (Traditional)
+  'ko',    // Korean
+  'ar',    // Arabic
+  'he',    // Hebrew
+];
 export const INTERNAL_PAGES = ['/footer', '/nav', '/fragments', '/data', '/drafts'];
+
 let lang;
 import { fetchPlaceholders } from './aem.js';
 import { isAuthorEnvironment } from './scripts.js';
