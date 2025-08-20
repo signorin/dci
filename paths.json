@@ -1,16 +1,16 @@
 {
   "mappings": [
-    "/content/dci/language-masters/en:/",
-    "/content/dci/language-masters/en/:/",
-    "/content/dci/language-masters/en/:/en/",
-    "/content/dci/configuration:/.helix/config.json",
-    "/content/dci/metadata:/metadata.json",
-    "/content/dci/redirects:/redirects.json",
-    "/content/dci/placeholders:/placeholders.json",
-    "/content/dci.resource/language-masters/en/query-index.json:/en/query-index.json"
+    "/content/mysite/language-masters/en:/",
+    "/content/mysite/language-masters/en/:/",
+    "/content/mysite/language-masters/en/:/en/",
+    "/content/mysite/configuration:/.helix/config.json",
+    "/content/mysite/metadata:/metadata.json",
+    "/content/mysite/redirects:/redirects.json",
+    "/content/mysite/placeholders:/placeholders.json",
+    "/content/mysite.resource/language-masters/en/query-index.json:/en/query-index.json"
   ],
   "includes": [
-    "/content/dci/",
-    "/content/dam/dci/"
+    "/content/mysite/",
+    "/content/dam/mysite/"
   ]
 }
